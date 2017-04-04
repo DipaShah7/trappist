@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Promact.Trappist.Utility.GlobalUtil;
+using Promact.Trappist.DomainModel.Models.Category;
 using System;
 
 namespace Promact.Trappist.Repository.Tests

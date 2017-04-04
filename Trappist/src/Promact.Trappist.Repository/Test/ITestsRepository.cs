@@ -1,6 +1,7 @@
 ﻿using Promact.Trappist.DomainModel.Models.Test;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using Promact.Trappist.DomainModel.Models.Category;
 
 namespace Promact.Trappist.Repository.Tests
 {
