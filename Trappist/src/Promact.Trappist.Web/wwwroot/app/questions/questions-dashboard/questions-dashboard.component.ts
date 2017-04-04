@@ -20,8 +20,8 @@ import { RenameCategoryDialogComponent } from './rename-category-dialog.componen
 export class QuestionsDashboardComponent implements OnInit {
     category: Category;
     showSearchInput: boolean;
-    questionDisplay: Question[] = new Array<Question>();
-    categoryArray: Category[] = new Array<Category>();
+    questionDisplay: Question[];
+    categoryArray: Category[];
     // to enable enum difficultylevel in template
     DifficultyLevel = DifficultyLevel;
     // to enable enum questiontype in template 
@@ -29,6 +29,8 @@ export class QuestionsDashboardComponent implements OnInit {
     optionName: string[] = ['a', 'b', 'c', 'd', 'e'];
     constructor(private questionsService: QuestionsService, private dialog: MdDialog, private categoryService: CategoryService) {
         this.category = new Category();
+        this.questionDisplay = new Array<Question>();
+        this.categoryArray = new Array<Category>();
     }
 
     ngOnInit() {
@@ -60,7 +62,7 @@ export class QuestionsDashboardComponent implements OnInit {
         let adddialogRef = this.dialog.open(AddCategoryDialogComponent);
         adddialogRef.afterClosed().subscribe(categoryToAdd => {
             if (categoryToAdd !== null && categoryToAdd !== undefined)
-                this.categoryArray.push(categoryToAdd);
+                this.categoryArray.unshift(categoryToAdd);
         });
     }
 
