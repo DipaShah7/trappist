@@ -40,6 +40,8 @@ import { Test } from './tests.model';
     ],
     providers: [
         TestService,
+        TestSettingService,
+        TestCreateDialogComponent,
         Test
     ]
 })
