@@ -6,6 +6,7 @@ import { Test } from './tests.model';
 export class TestService {
     private testApiUrl = 'api/tests';
     private testNameApiUrl = 'api/tests/isUnique';
+    private categoryApiUrl = 'api/tests/Category'
     constructor(private httpService: HttpService) {
     }
 
