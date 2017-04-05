@@ -14,6 +14,7 @@
             app: 'app',
 
             // angular bundles
+            '@angular/animations': 'npm:@angular/animations/bundles/animations.umd.js',
             '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
             '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
             '@angular/compiler': 'npm:@angular/compiler/bundles/compiler.umd.js',
@@ -44,7 +45,7 @@
                 defaultExtension: 'js'
             },
             'ngx-clipboard': {
-                main: 'dist/index.umd.js',
+                main: 'dist/bundles/ngxClipboard.umd.js',
                 //  defaultExtension: 'js'
             },
             'clipboard': {
