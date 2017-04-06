@@ -14,8 +14,8 @@ const testsRoutes: Routes = [
     component: TestsComponent,
     children: [
       { path: '', component: TestsDashboardComponent },
-      { path: ':id/settings', component: TestSettingsComponent },
-      { path: 'sections', component: TestSectionsComponent },
+      { path: 'settings/:id', component: TestSettingsComponent },
+      { path: 'sections/:id', component: TestSectionsComponent },
       { path: 'questions', component: TestQuestionsComponent },
       { path: 'view', component: TestViewComponent }
     ]
